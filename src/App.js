@@ -1,11 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { Backdrop, Button } from "@mui/material";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "React Material UI -Home";
+  }, []);
   return (
-    <div className="App">
-      <button>test</button>
-    </div>
+    <container
+      maxWidth="xl"
+      sx={{
+        background: "#fff",
+      }}
+    >
+      <Button>test</Button>
+    </container>
   );
 }
 
