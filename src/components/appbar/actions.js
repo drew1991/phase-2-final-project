@@ -1,22 +1,8 @@
 import { Favorite, Person, ShoppingCart } from "@mui/icons-material";
 import { Divider, ListItemButton, ListItemIcon } from "@mui/material";
-import {
-  ActionIconsContainerDesktop,
-  ActionIconsContainerMobile,
-  AppBarContainer,
-  AppbarHeader,
-  Mylist,
-} from "../../styles/appbar";
-// import {
-//   ActionIconsContainerDesktop,
-//   ActionIconsContainerMobile,
-//   Mylist,
-// } from "../../styles/appbar";
+import { Mylist } from "../../styles/appbar";
 
 export default function Actions({ matches }) {
-  const Component = matches
-    ? ActionIconsContainerMobile
-    : ActionIconsContainerDesktop;
   return (
     <Mylist type="row">
       <ListItemButton

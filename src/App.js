@@ -3,10 +3,12 @@ import {
   Backdrop,
   Button,
   Container,
-  ThemeProvider,
+  // ThemeProvider,
 } from "@mui/material";
+import { ThemeProvider } from "@mui/system";
 import { useEffect } from "react";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 import theme from "./styles/theme";
 
 function App() {
@@ -21,8 +23,8 @@ function App() {
           background: "#fff",
         }}
       >
-        <Appbar></Appbar>
-        <Button variant="contained">test</Button>
+        <Appbar />
+        <Banner />
       </Container>
     </ThemeProvider>
   );
